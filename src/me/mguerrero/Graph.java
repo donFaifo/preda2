@@ -46,7 +46,7 @@ public class Graph {
      */
     public void newLink(int node1, int node2, int weight)
     {
-        matrix[node1-1][node2-2] = weight;
+        matrix[node1-1][node2-1] = weight;
     }
 
     /**
@@ -92,7 +92,7 @@ public class Graph {
             System.out.printf("%2d| ", i+1);
             for(int j=0; j<nodes.size();j++)
             {
-                if (matrix[i][j]!=06)
+                if (matrix[i][j]!=0)
                 {
                     System.out.printf("%4d", 1);
                 } else
