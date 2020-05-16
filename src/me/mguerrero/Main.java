@@ -1,13 +1,17 @@
 package me.mguerrero;
 
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        Graph gr = new Graph(6);
-        gr.newLink(1, 2);
-        List<Integer> list = gr.getLinksFromNode(1);
-        gr.printMatrixToConsole();
+        int opt=0;
+        Scanner sc = new Scanner(System.in);
+        do {
+            System.out.println("MENÚ");
+            System.out.println("--------------------");
+            System.out.println("1. Crear grafo");
+        } while(opt!=0);
     }
 }
